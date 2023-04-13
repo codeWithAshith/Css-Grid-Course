@@ -23,13 +23,18 @@ body {
   /* -- same can be written as -- */
   /* grid-template-columns: repeat(3, 1fr); */
   /* -- u can also make columns bigger -- */
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   /* -- column gap -- */
   /* column-gap: 10px; */
   /* -- row gap -- */
-  /* row-gap: 10px; */
+  /* row-gap: 10px;03. Row height */
   /* -- combined -- */
   gap: 10px;
+  /* -- to have fixed height -- */
+  /* grid-auto-rows: 200px; */
+  /* -- to set min and max ranges -- */
+  /* grid-auto-rows: minmax(10px, 200px); */
+  grid-auto-rows: minmax(10px, auto);
 }
 
 .item {
