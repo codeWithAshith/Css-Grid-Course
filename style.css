@@ -7,29 +7,44 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background: #f5f5f5;
-}
-
-.container {
-  max-width: 960px;
-  margin: 20px auto;
-  padding: 10px;
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "nav content sidebar"
+    "nav footer footer";
+  grid-template-columns: 1fr 4fr 1fr;
+  /* -- similar ro grid-template-columns but for rows -- */
+  grid-template-rows: 80px 1fr 70px;
 }
 
-.item {
-  background: steelblue;
+header,
+footer,
+main,
+aside,
+nav {
+  background-color: steelblue;
   color: #fff;
-  font-size: 20px;
   padding: 20px;
   border: skyblue 1px solid;
 }
 
-@media (max-width: 500px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: content;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
 }
