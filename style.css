@@ -24,6 +24,12 @@ body {
   /* grid-template-columns: repeat(3, 1fr); */
   /* -- u can also make columns bigger -- */
   grid-template-columns: 1fr 2fr 1fr;
+  /* -- column gap -- */
+  /* column-gap: 10px; */
+  /* -- row gap -- */
+  /* row-gap: 10px; */
+  /* -- combined -- */
+  gap: 10px;
 }
 
 .item {
