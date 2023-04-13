@@ -16,6 +16,14 @@ body {
   max-width: 960px;
   margin: 20px auto;
   padding: 10px;
+  display: grid;
+  /* grid-template-columns: 100px 100px; */
+  /* -- most commonly used are fractions -fr -- */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* -- same can be written as -- */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* -- u can also make columns bigger -- */
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 .item {
